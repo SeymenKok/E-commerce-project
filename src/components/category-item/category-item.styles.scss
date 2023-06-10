@@ -10,13 +10,14 @@
     border: 1px solid black;
     margin: 0 7.5px 15px;
     overflow: hidden;
+    background-color: #f0f0f0;
   
     &:hover {
       cursor: pointer;
   
       & .background-image {
-        transform: scale(1.1);
-        transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+        transform: scale(1.2);
+        transition: transform s cubic-bezier(0.25, 0.45, 0.45, 0.95);
         
       }
   
@@ -61,7 +62,7 @@
         font-weight: bold;
         margin: 0 6px 0;
         font-size: 22px;
-        color: #202020;
+        color: #000000;
       }
   
       p {

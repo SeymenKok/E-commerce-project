@@ -10,7 +10,7 @@
         {           
         backgroundImage:`url(${imageUrl})` //Template string syntax
         }
-      } alt={title} />
+      } alt={""} />
       <div className="category-body-container">  
         <h5>{title}</h5>
         <h4>{price}</h4>
