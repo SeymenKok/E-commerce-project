@@ -10,7 +10,15 @@ const Navigation = () =>{
                 <Link className="logo-container" to="/">
                 <CompLogo className="logo"/>
                 </Link>
+                     
+                     <div className='search-box'>
+                        <label className='search-text'>Search</label>
+                     </div>
+                  
                  <div className="nav-links-container">
+                    <Link className='nav-link' to="/">
+                        Home
+                    </Link>
                     <Link className='nav-link' to="/shop">
                     Shop
                     </Link>

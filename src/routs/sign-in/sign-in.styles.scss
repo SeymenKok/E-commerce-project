@@ -1,0 +1,38 @@
+.card-container{
+    min-width: 25%;
+    height: 500px;
+    flex:  1 1 ;    
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    border: 1px solid black;
+    margin: 0 7.5px 15px;
+    overflow: hidden;
+}
+.googlesign{
+    height: 50%;
+    text-align: center;
+    width: 35%;
+
+}
+.googlesign>button{
+        background-image: linear-gradient(to right, #B2FEFA 0%, #0ED2F7  51%, #B2FEFA  100%);
+        margin: 10px;
+        padding: 10px 25px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 150% auto;
+        color: #000000;            
+        box-shadow: 0 0 20px #eee;
+        border-radius: 10px;
+      }
+
+      .googlesign>button:hover {
+        background-position: right center; 
+        color: #fff;
+        text-decoration: none;
+      }
+     

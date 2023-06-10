@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { createAuthUserWithEmailAndPassword, createUserDocumentFromAuth } from "../../utils/firebase/firebase.utils";
-
+import "./sign-up.styless.scss"
 const defaultFormFields = {
        displayName : '',
        email:'',
@@ -45,10 +45,10 @@ const SignUpForm = () => {
         }
 
     return ( 
-        <div>
+        <div >
             <h1>Sign up with your email and password</h1>
-            <form onSubmit={handleSubmit}>
-                <label>Display Name</label>
+            <form className="form-container" onSubmit={handleSubmit}>
+                <label className="label1">Display Name</label>
 
                 <input
                  type="text"
@@ -57,8 +57,8 @@ const SignUpForm = () => {
                  value={displayName}
                  onChange={handleChange}
                  />
-
-                <label>E-Mail</label>
+                  <br />
+                <label className="label2">E-Mail</label>
                 <input 
                 type="text"
                  required
@@ -66,8 +66,8 @@ const SignUpForm = () => {
                  value={email}
                  onChange={handleChange}
                  />
-
-                <label>Password</label>
+                 <br />
+                <label className="label3">Password</label>
                 <input
                  type="password"
                  required
@@ -75,8 +75,8 @@ const SignUpForm = () => {
                  value={password}
                  onChange={handleChange}
                  />
-
-                <label>Confirm Password</label>                               
+                  <br /> 
+                <label className="label4">Confirm Password</label>                               
                 <input 
                 type="password"
                  required
@@ -84,8 +84,8 @@ const SignUpForm = () => {
                  value={confirmPassword}
                  onChange={handleChange}
                  />
-
-                <button type="submit">Sign Up</button>
+                 <br />
+                <button  type="submit">Sign Up</button>
             </form>
         </div>
      );
